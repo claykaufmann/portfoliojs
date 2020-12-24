@@ -1,9 +1,13 @@
+import Link from 'next/link';
+
 export default function BaseNav() {
     return (
         <nav>
             <ul>
                 <li>
-                    <a>Home</a>
+                    <Link href='/'>
+                        <a>Home</a>
+                    </Link>
                 </li>
                 <li>
                     <a>Galleries</a>
@@ -21,6 +25,11 @@ export default function BaseNav() {
                             <a>Abstract</a>
                         </li>
                     </ul>
+                </li>
+                <li>
+                    <Link href='/about'>
+                        <a>About</a>
+                    </Link>
                 </li>
             </ul>
         </nav>

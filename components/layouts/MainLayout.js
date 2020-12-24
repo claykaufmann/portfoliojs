@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import BaseNav from '../jsx-components/BaseNav';
+import BaseHeader from '../jsx-components/BaseHeader';
 
 export const siteTitle = 'Clay Kaufmann Photography';
 
@@ -12,10 +12,7 @@ export default function MainLayout({ children }) {
                 <meta name='og:title' content={siteTitle} />
             </Head>
 
-            <header>
-                <h1>Clay Kaufmann Photography</h1>
-                <BaseNav></BaseNav>
-            </header>
+            <BaseHeader>test</BaseHeader>
             <div>{children}</div>
         </div>
     );
