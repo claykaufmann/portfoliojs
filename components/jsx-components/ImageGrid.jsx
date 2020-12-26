@@ -1,14 +1,16 @@
-export default class ImageGrid extends Component {
-    constructor(props) {
-        super(props);
-        this.images = props.images;
-    }
+import Image from './Image';
 
-    render() {
-        return this.images.forEach(image => {
-            <figure>
-                <img>image.url</img>
-            </figure>;
-        });
-    }
-}
+// ImageGrid component takes in an array of images, and creates images
+const ImageGrid = ({ images }) => {
+    return (
+        <div>
+            {images.map(image => (
+                <Image
+                    imgSrc={image.photo.src}
+                    imgCaption={image.photo.caption}
+                />
+            ))}
+        </div>
+    );
+};
+export default ImageGrid;

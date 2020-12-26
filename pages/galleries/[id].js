@@ -1,4 +1,5 @@
 import MainLayout from '../../components/layouts/MainLayout';
+import ImageGrid from '../../components/jsx-components/ImageGrid';
 import { getGalleryPaths, getImageData } from '../../lib/galleries';
 
 export async function getStaticPaths() {
@@ -10,21 +11,22 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const photoUrls = getImageData(params.id);
+    const photoData = getImageData(params.id);
     let id = params.id;
 
     return {
         props: {
             id,
-            photoUrls,
+            photoData,
         },
     };
 }
 
-export default function Gallery({ id }) {
+export default function Gallery({ id, photoData }) {
     return (
         <MainLayout>
-            <p>{id}</p>
+            <h2>{id}</h2>
+            <ImageGrid images={photoData.imagesData} />
         </MainLayout>
     );
 }
