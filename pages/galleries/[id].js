@@ -22,11 +22,11 @@ export async function getStaticProps({ params }) {
     };
 }
 
-export default function Gallery({ id, photoData }) {
+export default Gallery = ({ id, photoData }) => {
     return (
         <MainLayout>
             <h2>{id}</h2>
             <ImageGrid images={photoData.imagesData} />
         </MainLayout>
     );
-}
+};
