@@ -10,19 +10,29 @@ export default function BaseNav() {
                     </Link>
                 </li>
                 <li>
-                    <a>Galleries</a>
+                    <Link href='/galleries'>
+                        <a>Galleries</a>
+                    </Link>
                     <ul>
                         <li>
-                            <a>Featured</a>
+                            <Link href='/galleries/featured'>
+                                <a>Featured</a>
+                            </Link>
                         </li>
                         <li>
-                            <a>Portraits</a>
+                            <Link href='/galleries/landscapes'>
+                                <a>Landscapes</a>
+                            </Link>
                         </li>
                         <li>
-                            <a>Landscapes</a>
+                            <Link href='/galleries/california'>
+                                <a>California</a>
+                            </Link>
                         </li>
                         <li>
-                            <a>Abstract</a>
+                            <Link href='/galleries/vermont'>
+                                <a>Vermont</a>
+                            </Link>
                         </li>
                     </ul>
                 </li>
