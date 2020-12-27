@@ -1,6 +1,6 @@
-import MainLayout from '../../components/layouts/MainLayout';
-import ImageGrid from '../../components/jsx-components/ImageGrid';
-import { getGalleryPaths, getImageData } from '../../lib/galleries';
+import PhotoLayout from '../../../components/layouts/PhotoLayout';
+import ImageGrid from '../../../components/jsx-components/ImageGrid';
+import { getGalleryPaths, getImageData } from '../../../lib/galleries';
 
 export async function getStaticPaths() {
     const paths = getGalleryPaths();
@@ -23,10 +23,10 @@ export async function getStaticProps({ params }) {
 
 const Gallery = ({ id, photoData }) => {
     return (
-        <MainLayout>
+        <PhotoLayout>
             <h2>{id}</h2>
             <ImageGrid images={photoData.imagesData} />
-        </MainLayout>
+        </PhotoLayout>
     );
 };
 export default Gallery;

@@ -4,7 +4,7 @@ import Footer from '../jsx-components/Footer';
 
 export const siteTitle = 'Clay Kaufmann Photography';
 
-const MainLayout = ({ children }) => {
+export default function PhotoLayout({ children }) {
     return (
         <div>
             <Head>
@@ -18,5 +18,4 @@ const MainLayout = ({ children }) => {
             <Footer></Footer>
         </div>
     );
-};
-export default MainLayout;
+}

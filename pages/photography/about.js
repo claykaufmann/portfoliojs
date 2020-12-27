@@ -1,12 +1,12 @@
 import Head from 'next/head';
-import MainLayout, { siteTitle } from '../components/layouts/MainLayout';
+import PhotoLayout, { siteTitle } from '../../components/layouts/PhotoLayout';
 
 const About = () => {
     return (
-        <MainLayout>
+        <PhotoLayout>
             <Head></Head>
             <h2>ABOUT</h2>
-        </MainLayout>
+        </PhotoLayout>
     );
 };
 export default About;
