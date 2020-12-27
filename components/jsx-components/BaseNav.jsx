@@ -41,6 +41,11 @@ const BaseNav = () => {
                                 </li>
                             </ul>
                         </li>
+                        <li>
+                            <Link href='/photography/film'>
+                                <a>Film</a>
+                            </Link>
+                        </li>
                     </ul>
                 </li>
                 <li>

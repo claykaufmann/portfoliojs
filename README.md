@@ -1,3 +1,5 @@
-# Portfolio photography website with nextjs
+# Portfolio withh NextJS
 
-This is my photography portfolio website built using NextJS and react
+This is my overall portfolio website made with NextJS. When finished, it will
+house my coding portfolio, and coding portfolio, as well as a Blog, and other
+things I find interesting.
