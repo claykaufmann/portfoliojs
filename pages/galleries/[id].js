@@ -13,7 +13,6 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
     const photoData = getImageData(params.id);
     let id = params.id;
-
     return {
         props: {
             id,
@@ -22,7 +21,7 @@ export async function getStaticProps({ params }) {
     };
 }
 
-export default Gallery = ({ id, photoData }) => {
+const Gallery = ({ id, photoData }) => {
     return (
         <MainLayout>
             <h2>{id}</h2>
@@ -30,3 +29,4 @@ export default Gallery = ({ id, photoData }) => {
         </MainLayout>
     );
 };
+export default Gallery;

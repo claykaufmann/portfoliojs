@@ -8,6 +8,7 @@ const ImageGrid = ({ images }) => {
                 <Image
                     imgSrc={image.photo.src}
                     imgCaption={image.photo.caption}
+                    key={image.title}
                 />
             ))}
         </div>

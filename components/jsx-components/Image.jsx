@@ -1,4 +1,4 @@
-export default Image = ({ imgSrc, imgCaption }) => {
+const Image = ({ imgSrc, imgCaption }) => {
     return (
         <figure>
             <img src={imgSrc} />
@@ -6,3 +6,4 @@ export default Image = ({ imgSrc, imgCaption }) => {
         </figure>
     );
 };
+export default Image;

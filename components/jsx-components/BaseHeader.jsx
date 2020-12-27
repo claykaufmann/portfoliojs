@@ -1,6 +1,6 @@
 import BaseNav from './BaseNav';
 
-export default function BaseHeader() {
+const BaseHeader = () => {
     return (
         <header>
             {/* THIS SHOULD BE A PHOTO AT SOME POINT */}
@@ -8,4 +8,5 @@ export default function BaseHeader() {
             <BaseNav></BaseNav>
         </header>
     );
-}
+};
+export default BaseHeader;

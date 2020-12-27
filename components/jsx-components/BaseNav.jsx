@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function BaseNav() {
+const BaseNav = () => {
     return (
         <nav>
             <ul>
@@ -44,4 +44,5 @@ export default function BaseNav() {
             </ul>
         </nav>
     );
-}
+};
+export default BaseNav;
