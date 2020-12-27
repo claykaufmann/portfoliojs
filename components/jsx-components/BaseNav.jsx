@@ -10,29 +10,36 @@ const BaseNav = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link href='/galleries'>
-                        <a>Galleries</a>
+                    <Link href='/photography'>
+                        <a>Photography</a>
                     </Link>
                     <ul>
                         <li>
-                            <Link href='/galleries/featured'>
-                                <a>Featured</a>
+                            <Link href='/photography/galleries'>
+                                <a>Galleries</a>
                             </Link>
-                        </li>
-                        <li>
-                            <Link href='/galleries/landscapes'>
-                                <a>Landscapes</a>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href='/galleries/california'>
-                                <a>California</a>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href='/galleries/vermont'>
-                                <a>Vermont</a>
-                            </Link>
+                            <ul>
+                                <li>
+                                    <Link href='/photography/galleries/featured'>
+                                        <a>Featured</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href='/photography/galleries/landscapes'>
+                                        <a>Landscapes</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href='/photography/galleries/california'>
+                                        <a>California</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href='/photography/galleries/vermont'>
+                                        <a>Vermont</a>
+                                    </Link>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </li>
