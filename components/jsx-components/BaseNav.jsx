@@ -30,12 +30,12 @@ const BaseNav = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href='/photography/galleries/california'>
+                                    <Link href='/photography/galleries/abstract'>
                                         <a>California</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href='/photography/galleries/vermont'>
+                                    <Link href='/photography/galleries/blackwhite'>
                                         <a>Vermont</a>
                                     </Link>
                                 </li>
