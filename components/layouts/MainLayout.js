@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import BaseHeader from '../jsx-components/BaseHeader';
-import Footer from '../jsx-components/Footer';
+import BaseHeader from '../jsx-components/BaseHeader/BaseHeader';
+import Footer from '../jsx-components/Footer/Footer';
 
 export const siteTitle = 'Clay Kaufmann Photography';
 

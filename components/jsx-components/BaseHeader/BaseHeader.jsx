@@ -1,4 +1,4 @@
-import BaseNav from './BaseNav';
+import BaseNav from '../BaseNav/BaseNav';
 
 const BaseHeader = () => {
     return (

@@ -1,9 +1,9 @@
-import Image from './Image';
+import Image from '../Image/Image';
 
 // ImageGrid component takes in an array of images, and creates images
 const ImageGrid = ({ images }) => {
     return (
-        <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-items-center'>
+        <div>
             {images.map(image => (
                 <Image
                     imgSrc={image.photo.thumbsrc}
