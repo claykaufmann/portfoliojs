@@ -1,5 +1,5 @@
 // import global stylesheet
-import '../styles/global/globals.css';
+import '../styles/global/globals.scss';
 
 const App = ({ Component, pageProps }) => {
     return <Component {...pageProps} />;
