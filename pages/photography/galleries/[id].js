@@ -1,4 +1,4 @@
-import PhotoLayout from '../../../components/layouts/PhotoLayout';
+import PhotoLayout from '../../../components/layouts/PhotoLayout/PhotoLayout';
 import ImageGrid from '../../../components/jsx-components/ImageGrid/ImageGrid';
 import { getGalleryPaths, getImageData } from '../../../lib/galleries';
 

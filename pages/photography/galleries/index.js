@@ -1,6 +1,6 @@
 import PhotoLayout, {
     siteTitle,
-} from '../../../components/layouts/PhotoLayout';
+} from '../../../components/layouts/PhotoLayout/PhotoLayout';
 
 // index page is going to be the splash page
 const Home = () => {

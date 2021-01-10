@@ -1,5 +1,7 @@
 import Head from 'next/head';
-import PhotoLayout, { siteTitle } from '../../components/layouts/PhotoLayout';
+import PhotoLayout, {
+    siteTitle,
+} from '../../components/layouts/PhotoLayout/PhotoLayout';
 
 const About = () => {
     return (
