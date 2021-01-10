@@ -1,7 +1,8 @@
+// import global stylesheet
 import '../styles/global/globals.css';
 
-const MyApp = ({ Component, pageProps }) => {
+const App = ({ Component, pageProps }) => {
     return <Component {...pageProps} />;
 };
 
-export default MyApp;
+export default App;

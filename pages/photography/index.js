@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import PhotoLayout, { siteTitle } from '../../components/layouts/PhotoLayout';
 
-// index page is going to be the splash page
+// index page is going to be the splash page for photography
 const Home = () => {
     return (
         <PhotoLayout>
