@@ -13,40 +13,6 @@ const BaseNav = () => {
                     <Link href='/photography'>
                         <a>Photography</a>
                     </Link>
-                    <ul>
-                        <li>
-                            <Link href='/photography/galleries'>
-                                <a>Galleries</a>
-                            </Link>
-                            <ul>
-                                <li>
-                                    <Link href='/photography/galleries/featured'>
-                                        <a>Featured</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href='/photography/galleries/landscapes'>
-                                        <a>Landscapes</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href='/photography/galleries/abstract'>
-                                        <a>California</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href='/photography/galleries/blackwhite'>
-                                        <a>Vermont</a>
-                                    </Link>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <Link href='/photography/film'>
-                                <a>Film</a>
-                            </Link>
-                        </li>
-                    </ul>
                 </li>
                 <li>
                     <Link href='/about'>

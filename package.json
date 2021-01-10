@@ -14,9 +14,8 @@
     "postcss-preset-env": "^6.7.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-image-gallery": "^1.0.8"
-  },
-  "devDependencies": {
+    "react-image-gallery": "^1.0.8",
     "sass": "^1.32.2"
-  }
+  },
+  "devDependencies": {}
 }

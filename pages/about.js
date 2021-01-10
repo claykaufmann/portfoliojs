@@ -1,14 +1,12 @@
-import Head from 'next/head';
-import PhotoLayout, {
-    siteTitle,
-} from '../../components/layouts/PhotoLayout/PhotoLayout';
+import BaseHeader from '../components/jsx-components/BaseHeader/BaseHeader';
+import BaseLayout from '../components/layouts/BaseLayout/BaseLayout';
 
 const About = () => {
     return (
-        <PhotoLayout>
-            <Head></Head>
+        <BaseLayout>
             <h2>ABOUT</h2>
-        </PhotoLayout>
+            <BaseHeader></BaseHeader>
+        </BaseLayout>
     );
 };
 export default About;

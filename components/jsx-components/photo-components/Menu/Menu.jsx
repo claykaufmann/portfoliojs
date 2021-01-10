@@ -1,8 +1,14 @@
 import Link from 'next/link';
+import { bool } from 'prop-types';
+import styles from './Menu.module.scss';
 
-const PhotoNav = () => {
+const Menu = ({ open }) => {
+    const isOpen = open;
     return (
-        <nav>
+        <div className={styles.main}>
+            <Link href='/'>
+                <a>Back to main site</a>
+            </Link>
             <Link href='/photography'>
                 <h1>Clay Kaufmann</h1>
             </Link>
@@ -24,8 +30,12 @@ const PhotoNav = () => {
             <Link href='/photography/galleries/all'>
                 <a>All Photos</a>
             </Link>
-        </nav>
+        </div>
     );
 };
 
-export default PhotoNav;
+Menu.propTypes = {
+    open: bool.isRequired,
+};
+
+export default Menu;

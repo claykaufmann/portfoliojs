@@ -3,5 +3,5 @@
 @use '../theme/coding/theme' as coding;
 
 // import css reset
-@import '../resets/reset';
+@use '../resets/reset';
 // will eventually add import for coding theme
