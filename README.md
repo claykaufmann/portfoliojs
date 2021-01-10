@@ -1,5 +1,6 @@
-# Portfolio withh NextJS
+# Personal Portfolio
 
-This is my overall portfolio website made with NextJS. When finished, it will
-house my coding portfolio, and coding portfolio, as well as a Blog, and other
-things I find interesting.
+This is my portfolio website. It is currently in early stages of development.
+Upon completion, it will house my photography portfolio, as well as my coding
+portfolio. It is being developed using NextJS, along with SCSS for the front
+end.
