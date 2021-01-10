@@ -23,7 +23,7 @@ export async function getStaticProps({ params }) {
 
 const Gallery = ({ id, photoData }) => {
     return (
-        <PhotoLayout>
+        <PhotoLayout pageTitle={id}>
             <h2>{id}</h2>
             <ImageGrid images={photoData.imagesData} />
         </PhotoLayout>

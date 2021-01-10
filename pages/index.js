@@ -1,13 +1,15 @@
-import Head from 'next/head';
-import MainLayout from '../components/layouts/MainLayout';
-import PhotoLayout, { siteTitle } from '../components/layouts/MainLayout';
+import BaseLayout from '../components/layouts/BaseLayout/BaseLayout';
+import BaseHeader from '../components/jsx-components/BaseHeader/BaseHeader';
+import Footer from '../components/jsx-components/Footer/Footer';
 
 // index page is going to be the splash page
 const Home = () => {
     return (
-        <MainLayout>
+        <BaseLayout pageTitle='Clay Kaufmann'>
+            <BaseHeader></BaseHeader>
             <h2>MAIN INDEX</h2>
-        </MainLayout>
+            <Footer></Footer>
+        </BaseLayout>
     );
 };
 export default Home;
