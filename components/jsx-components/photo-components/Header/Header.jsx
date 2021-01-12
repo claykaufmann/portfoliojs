@@ -6,6 +6,9 @@ const Header = () => {
     return (
         <header className={styles.main}>
             {/* THIS SHOULD BE A PHOTO AT SOME POINT */}
+            <Link href='/photography'>
+                <h1>Clay Kaufmann Photography</h1>
+            </Link>
             <BurgerMenu />
         </header>
     );

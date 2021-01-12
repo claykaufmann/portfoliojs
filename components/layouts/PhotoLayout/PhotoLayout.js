@@ -7,7 +7,7 @@ export default function PhotoLayout({ children, pageTitle }) {
     return (
         <BaseLayout pageTitle={pageTitle}>
             <div className={styles.main}>
-                <Header>test</Header>
+                <Header></Header>
                 <div>{children}</div>
                 <Footer></Footer>
             </div>

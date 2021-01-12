@@ -7,7 +7,7 @@ import PhotoLayout, {
 const Home = () => {
     return (
         <PhotoLayout>
-            <h2>PHOTOGRAPHY SITE INDEX</h2>
+            <h2>Photo Site Index</h2>
         </PhotoLayout>
     );
 };

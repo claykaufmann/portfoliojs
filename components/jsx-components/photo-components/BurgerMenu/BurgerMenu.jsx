@@ -4,12 +4,9 @@ import styles from './BurgerMenu.module.scss';
 
 const BurgerMenu = () => {
     return (
-        <Menu right>
+        <Menu right styles={styles}>
             <Link href='/' className='menu-item'>
                 <a>Back to main site</a>
-            </Link>
-            <Link href='/photography' className='menu-item'>
-                <h1>Clay Kaufmann</h1>
             </Link>
             <Link href='/photography/galleries' className='menu-item'>
                 <a>Galleries</a>
