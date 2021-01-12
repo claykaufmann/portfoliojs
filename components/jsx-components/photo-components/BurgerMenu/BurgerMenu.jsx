@@ -2,9 +2,12 @@ import Link from 'next/link';
 import { slide as Menu } from 'react-burger-menu';
 import styles from './BurgerMenu.module.scss';
 
+// this import is needed to style the burger menu
+import menuStyles from './menuStyles';
+
 const BurgerMenu = () => {
     return (
-        <Menu right styles={styles}>
+        <Menu right styles={menuStyles}>
             <Link href='/' className='menu-item'>
                 <a>Back to main site</a>
             </Link>
