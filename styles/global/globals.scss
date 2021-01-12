@@ -5,3 +5,7 @@
 // import css reset
 @use '../resets/reset';
 // will eventually add import for coding theme
+
+html {
+    background-color: photo.$primary-dark;
+}
