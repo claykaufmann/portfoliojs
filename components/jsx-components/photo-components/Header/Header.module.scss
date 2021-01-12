@@ -1,0 +1,6 @@
+// import theme
+@use '../../../../styles/theme/photography/theme';
+
+.heading {
+    font-family: theme.$header-font;
+}
