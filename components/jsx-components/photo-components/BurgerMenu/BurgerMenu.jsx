@@ -9,31 +9,31 @@ const BurgerMenu = () => {
     return (
         <Menu right styles={menuStyles}>
             <Link href='/' className='menu-item'>
-                <a>Back to main site</a>
+                <a className={styles.menuLink}>Back to main site</a>
             </Link>
             <Link href='/photography/galleries' className='menu-item'>
-                <a>Galleries</a>
+                <a className={styles.menuLink}>Galleries</a>
             </Link>
             <Link href='/photography/galleries/featured' className='menu-item'>
-                <a>Featured</a>
+                <a className={styles.menuLink}>Featured</a>
             </Link>
             <Link
                 href='/photography/galleries/landscapes'
                 className='menu-item'
             >
-                <a>Landscapes</a>
+                <a className={styles.menuLink}>Landscapes</a>
             </Link>
             <Link href='/photography/galleries/abstract' className='menu-item'>
-                <a>Abstracts</a>
+                <a className={styles.menuLink}>Abstracts</a>
             </Link>
             <Link
                 href='/photography/galleries/blackwhite'
                 className='menu-item'
             >
-                <a>Black and White</a>
+                <a className={styles.menuLink}>Black and White</a>
             </Link>
             <Link href='/photography/galleries/all' className='menu-item'>
-                <a>All Photos</a>
+                <a className={styles.menuLink}>All Photos</a>
             </Link>
         </Menu>
     );
