@@ -1,4 +1,8 @@
 const Footer = () => {
-    return <footer>Clay Kaufmann</footer>;
+    return (
+        <footer>
+            <p>Clay Kaufmann</p>
+        </footer>
+    );
 };
 export default Footer;

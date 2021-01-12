@@ -6,9 +6,9 @@ import styles from './PhotoLayout.module.scss';
 export default function PhotoLayout({ children, pageTitle }) {
     return (
         <BaseLayout pageTitle={pageTitle}>
-            <div className={styles.main}>
+            <div id={styles.page}>
                 <Header></Header>
-                <div>{children}</div>
+                <>{children}</>
                 <Footer></Footer>
             </div>
         </BaseLayout>

@@ -4,12 +4,8 @@
 
 // import css reset
 @use '../resets/reset';
-// will eventually add import for coding theme
 
-html {
-    background-color: photo.$primary-dark;
-}
+// need to conditionally import the page background based on if its in the
+    // photography site
 
-p {
-    font-family: photo.$core-font;
-}
+
