@@ -3,12 +3,12 @@ import PhotoLayout, {
     siteTitle,
 } from '../components/layouts/PhotoLayout/PhotoLayout';
 
-// index page is going to be the splash page for photography
-const Home = () => {
+// index page is going to be the splash page
+const Film = () => {
     return (
         <PhotoLayout>
-            <h2>Photo Site Index</h2>
+            <h2>Film Shots</h2>
         </PhotoLayout>
     );
 };
-export default Home;
+export default Film;

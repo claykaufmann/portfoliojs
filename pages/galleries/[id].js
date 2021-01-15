@@ -1,6 +1,6 @@
-import PhotoLayout from '../../../components/layouts/PhotoLayout/PhotoLayout';
-import ImageGrid from '../../../components/jsx-components/ImageGrid/ImageGrid';
-import { getGalleryPaths, getImageData } from '../../../lib/galleries';
+import PhotoLayout from '../../components/layouts/PhotoLayout/PhotoLayout';
+import ImageGrid from '../../components/jsx-components/ImageGrid/ImageGrid';
+import { getGalleryPaths, getImageData } from '../../lib/galleries';
 
 export async function getStaticPaths() {
     const paths = getGalleryPaths();

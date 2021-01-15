@@ -1,4 +1,4 @@
-import Header from '../../jsx-components/photo-components/Header/Header';
+import Header from '../../jsx-components/Header/Header';
 import BaseLayout from '../BaseLayout/BaseLayout';
 import Footer from '../../jsx-components/Footer/Footer';
 import styles from './PhotoLayout.module.scss';

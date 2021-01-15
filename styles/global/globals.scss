@@ -1,6 +1,5 @@
 // import themes
-@use '../theme/photography/_theme' as photo;
-@use '../theme/coding/theme' as coding;
+@use '../theme/_theme' as theme;
 
 // import css reset
 @use '../resets/reset';
