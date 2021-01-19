@@ -1,14 +1,12 @@
 import Head from 'next/head';
-import PhotoLayout, {
-    siteTitle,
-} from '../components/layouts/PhotoLayout/PhotoLayout';
+import BaseLayout from '../components/layouts/BaseLayout/BaseLayout';
 
 // index page is going to be the splash page for photography
 const Home = () => {
     return (
-        <PhotoLayout>
+        <BaseLayout>
             <h2>Photo Site Index</h2>
-        </PhotoLayout>
+        </BaseLayout>
     );
 };
 export default Home;

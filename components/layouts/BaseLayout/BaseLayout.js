@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import styles from './BaseLayout.module.scss';
+import Header from '../../jsx-components/Header/Header';
+import Footer from '../../jsx-components/Footer/Footer';
 
 const BaseLayout = ({ children, pageTitle }) => {
     return (
@@ -10,7 +12,9 @@ const BaseLayout = ({ children, pageTitle }) => {
                 <title>{pageTitle}</title>
                 <meta name='og:title' content={pageTitle} />
             </Head>
+            <Header />
             <>{children}</>
+            <Footer id={styles.footer} />
         </div>
     );
 };

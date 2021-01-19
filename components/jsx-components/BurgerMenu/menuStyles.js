@@ -4,7 +4,7 @@ var menuStyles = {
         position: 'fixed',
         width: '36px',
         height: '30px',
-        left: '36px',
+        right: '36px',
         top: '36px',
     },
     bmBurgerBars: {
@@ -25,7 +25,7 @@ var menuStyles = {
         height: '100%',
     },
     bmMenu: {
-        background: '#373a47',
+        background: '#696D7D',
         padding: '2.5em 1.5em 0',
         fontSize: '1.15em',
     },
@@ -33,14 +33,15 @@ var menuStyles = {
         fill: '#373a47',
     },
     bmItemList: {
-        color: '#b8b7ad',
+        color: '#EBEBEB',
         padding: '0.8em',
     },
     bmItem: {
         display: 'inline-block',
     },
+
     bmOverlay: {
-        background: 'rgba(0, 0, 0, 0.3)',
+        background: 'rgba(0, 0, 0, 0)',
     },
 };
 

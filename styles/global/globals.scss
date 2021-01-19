@@ -4,7 +4,9 @@
 // import css reset
 @use '../resets/reset';
 
-// need to conditionally import the page background based on if its in the
-    // photography site
-
-
+// set background color
+body {
+    background-color: theme.$primary;
+    color: theme.$on-primary;
+    font-family: theme.$core-font;
+}

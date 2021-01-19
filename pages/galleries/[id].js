@@ -1,4 +1,4 @@
-import PhotoLayout from '../../components/layouts/PhotoLayout/PhotoLayout';
+import BaseLayout from '../../components/layouts/BaseLayout/BaseLayout';
 import ImageGrid from '../../components/jsx-components/ImageGrid/ImageGrid';
 import { getGalleryPaths, getImageData } from '../../lib/galleries';
 
@@ -23,10 +23,10 @@ export async function getStaticProps({ params }) {
 
 const Gallery = ({ id, photoData }) => {
     return (
-        <PhotoLayout pageTitle={id}>
+        <BaseLayout pageTitle={id}>
             <h2>{id}</h2>
             <ImageGrid images={photoData.imagesData} />
-        </PhotoLayout>
+        </BaseLayout>
     );
 };
 export default Gallery;

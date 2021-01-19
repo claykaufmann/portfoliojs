@@ -1,13 +1,11 @@
-import PhotoLayout, {
-    siteTitle,
-} from '../../components/layouts/PhotoLayout/PhotoLayout';
+import BaseLayout from '../../components/layouts/BaseLayout/BaseLayout';
 
 // index page is going to be the splash page
 const Home = () => {
     return (
-        <PhotoLayout>
+        <BaseLayout>
             <h2>Galleries</h2>
-        </PhotoLayout>
+        </BaseLayout>
     );
 };
 export default Home;
