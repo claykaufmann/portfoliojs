@@ -5,7 +5,7 @@ import styles from './Burger.module.scss';
 const Burger = ({ open, setOpen }) => {
     return (
         <div
-            className={open ? styles.burger : styles.cross}
+            className={open ? styles.cross : styles.burger}
             open={open}
             onClick={() => setOpen(!open)}
         >

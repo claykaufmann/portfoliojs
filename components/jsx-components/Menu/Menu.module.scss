@@ -30,9 +30,8 @@
     transform: translateX(0)
 }
 
-
 .menuLinkText {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     padding: 2rem 0;
     font-weight: bold;
@@ -40,6 +39,11 @@
     color: theme.$on-secondary;
     text-decoration: none;
     transition: color 0.3s linear;
+    text-align: center;
+
+    @include theme.media(">phone") {
+        text-align: left;
+    }
 
     &:hover {
         color: theme.$on-secondary-light;
