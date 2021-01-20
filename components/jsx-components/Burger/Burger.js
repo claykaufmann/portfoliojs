@@ -9,9 +9,9 @@ const Burger = ({ open, setOpen }) => {
             open={open}
             onClick={() => setOpen(!open)}
         >
-            <div className={styles.barBurger} />
-            <div className={styles.barBurger} />
-            <div className={styles.barBurger} />
+            <div className={styles.burgerBar} />
+            <div className={styles.burgerBar} />
+            <div className={styles.burgerBar} />
         </div>
     );
 };

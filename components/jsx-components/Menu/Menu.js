@@ -6,6 +6,9 @@ import styles from './Menu.module.scss';
 const Menu = ({ open }) => {
     return (
         <nav className={open ? styles.openMenu : styles.closedMenu}>
+            <Link href='/about' className={styles.menuLink}>
+                <a className={styles.menuLinkText}>About</a>
+            </Link>
             <Link href='/galleries' className={styles.menuLinkText}>
                 <a className={styles.menuLinkText}>Galleries</a>
             </Link>
@@ -19,10 +22,10 @@ const Menu = ({ open }) => {
                 <a className={styles.menuLinkText}>Abstracts</a>
             </Link>
             <Link href='/galleries/blackwhite' className={styles.menuLink}>
-                <a className={styles.menuLinkText}>Black and White</a>
+                <a className={styles.menuLinkText}>Black / White</a>
             </Link>
-            <Link href='/galleries/all' className={styles.menuLink}>
-                <a className={styles.menuLinkText}>All Photos</a>
+            <Link href='/film' className={styles.menuLink}>
+                <a className={styles.menuLinkText}>Film</a>
             </Link>
         </nav>
     );

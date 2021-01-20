@@ -1,6 +1,7 @@
 @use '../../../styles/theme/theme';
 
-.closedMenu {
+// mixin to get rid of duplicate styling for opened and closed menu
+@mixin baseMenuStyle {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,21 +13,17 @@
     top: 0;
     left: 0;
     transition: transform 0.3s ease-in-out;
+}
+
+.closedMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
     transform: translateX(-100%);
 }
 
 .openMenu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: theme.$secondary;
-    height: 100vh;
-    text-align: left;
-    padding: 2rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform 0.3s ease-in-out;
+    @include baseMenuStyle;
     transform: translateX(0)
 }
 

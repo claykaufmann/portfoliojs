@@ -1,23 +1,8 @@
 @use '../../../styles/theme/theme';
 
-.barBurger {
-    width: 2rem;
-    height: 0.25rem;
-    background: theme.$on-primary;
-    border-radius: 10px;
-    transition: all 0.3s linear;
-    position: relative;
-    transform-origin: 1px;
-
-    width: 2rem;
-    height: 0.25rem;
-    border-radius: 10px;
-    transition: all 0.3s linear;
-    position: relative;
-    transform-origin: 1px;
-}
-
-.cross {
+// mixin to get rid of duplicate styling for opened and closed burger
+//  takes in a color which is used as the hover color
+@mixin baseBurgerStyle($color) {
     position: absolute;
     top: 5%;
     left: 2rem;
@@ -35,6 +20,28 @@
     &:focus {
         outline: none;
     }
+
+    &:hover {
+        .burgerBar {
+            background: $color;
+        }
+    }
+}
+
+/* One bar of the burger */
+.burgerBar {
+    width: 2rem;
+    height: 0.25rem;
+    background: theme.$on-primary;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+}
+
+/* The burger when it is in the 'X' mode */
+.cross {
+    @include baseBurgerStyle(theme.$on-secondary-light);
 
     :first-child {
         background: theme.$on-secondary;
@@ -50,49 +57,9 @@
         background: theme.$on-secondary;
         transform: rotate(-45deg);
     }
-
-    &:hover {
-        .barBurger {
-            background: theme.$on-secondary-light;
-        }
-    }
 }
 
+/* The burger when it is burger mode */
 .burger {
-    position: absolute;
-    top: 5%;
-    left: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 2rem;
-    height: 2rem;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    z-index: 10;
-  
-    &:focus {
-        outline: none;
-    }
-
-    &:hover {
-        .barBurger {
-            background: theme.$on-primary-light;
-        }
-    }
-
-    :first-child {
-      transform: rotate(0);
-    }
-
-    :nth-child(2) {
-      opacity: 1;
-      transform: translateX(0);
-    }
-
-    :nth-child(3) {
-      transform: rotate(0);
-    }
+    @include baseBurgerStyle(theme.$on-primary-light);
 }
