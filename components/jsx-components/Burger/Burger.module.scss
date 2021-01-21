@@ -4,7 +4,7 @@
 //  takes in a color which is used as the hover color
 @mixin baseBurgerStyle($color) {
     position: absolute;
-    top: 3%;
+    top: 5%;
     left: 1.2rem;
     display: flex;
     flex-direction: column;

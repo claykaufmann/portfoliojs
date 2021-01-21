@@ -12,9 +12,6 @@ const Menu = ({ open }) => {
             <Link href='/about' className={styles.menuLink}>
                 <a className={styles.menuLinkText}>About</a>
             </Link>
-            <Link href='/galleries' className={styles.menuLinkText}>
-                <a className={styles.menuLinkText}>Galleries</a>
-            </Link>
             <Link href='/galleries/featured' className={styles.menuLink}>
                 <a className={styles.menuLinkText}>Featured</a>
             </Link>
