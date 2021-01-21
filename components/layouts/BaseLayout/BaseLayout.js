@@ -13,7 +13,7 @@ const BaseLayout = ({ children, pageTitle }) => {
                 <meta name='og:title' content={pageTitle} />
             </Head>
             <Header />
-            <>{children}</>
+            <div className={styles.pageContent}>{children}</div>
             <Footer id={styles.footer} />
         </div>
     );

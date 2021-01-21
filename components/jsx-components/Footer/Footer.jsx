@@ -1,7 +1,9 @@
+import styles from './Footer.module.scss';
+
 const Footer = () => {
     return (
         <footer>
-            <p>Clay Kaufmann</p>
+            <p className={styles.text}>Clay Kaufmann</p>
         </footer>
     );
 };

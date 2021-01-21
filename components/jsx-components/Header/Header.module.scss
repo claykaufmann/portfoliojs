@@ -3,4 +3,13 @@
 
 .headingText {
     font-family: theme.$header-font;
+    color: theme.$on-primary;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    &:hover {
+        cursor: pointer;
+        color: theme.$on-primary-light;
+    }
+    transition: 0.3s;
 }

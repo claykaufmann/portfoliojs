@@ -1,1 +1,10 @@
 @use '../../../styles/theme/theme';
+
+.pageContent {
+    margin-top: 0.8rem;
+    padding-left: 1rem;
+
+    @include theme.media(">phone") {
+        margin-top: 3.5rem;
+    }
+}

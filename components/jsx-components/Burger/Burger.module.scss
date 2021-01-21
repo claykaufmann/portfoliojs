@@ -4,8 +4,8 @@
 //  takes in a color which is used as the hover color
 @mixin baseBurgerStyle($color) {
     position: absolute;
-    top: 5%;
-    left: 2rem;
+    top: 3%;
+    left: 1.2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -25,6 +25,12 @@
         .burgerBar {
             background: $color;
         }
+    }
+    
+    // will need to re go over this media query
+    @include theme.media(">phone") {
+        left: 2.5rem;
+        top: 5%;
     }
 }
 

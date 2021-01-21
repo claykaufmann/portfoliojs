@@ -6,6 +6,9 @@ import styles from './Menu.module.scss';
 const Menu = ({ open }) => {
     return (
         <nav className={open ? styles.openMenu : styles.closedMenu}>
+            <Link href='/' className={styles.menuLink}>
+                <a className={styles.menuLinkText}>Home</a>
+            </Link>
             <Link href='/about' className={styles.menuLink}>
                 <a className={styles.menuLinkText}>About</a>
             </Link>
