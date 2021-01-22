@@ -22,6 +22,10 @@
     @include theme.media("<=iphone-6-7-8-plus") {
         max-width: 18.3rem;
     }
+
+    @include theme.media("<=iphone-10") {
+        padding-top: 1.5rem;
+    }
 }
 
 .main {

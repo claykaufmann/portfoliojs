@@ -1,5 +1,16 @@
 @use '../../../styles/theme/theme';
 
 .pageContent {
-    padding-left: 1rem;
+    padding: 1rem;
+    flex: 1 0 auto;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    flex-shrink: 0;
 }

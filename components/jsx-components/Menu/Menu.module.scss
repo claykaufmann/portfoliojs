@@ -6,8 +6,9 @@
     flex-direction: column;
     justify-content: center;
     background: theme.$secondary;
-    height: 100%;
-    padding: 2rem;
+    height: 100vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -17,12 +18,10 @@
     // make the menu take up the entire screen on phones portrait view
     @include theme.media("<=iphone-6-7-8-plus") {
         width: 85vw;
-        height: 100vh;
     }
 
     @include theme.media("<=phone") {
         width: 83vw;
-        height: 100vh;
     }
 }
 
