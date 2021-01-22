@@ -1,8 +1,12 @@
 @use '../../../styles/theme/theme';
 
 .pageContent {
-    padding: 1rem;
+    padding: 2rem;
     flex: 1 0 auto;
+
+    @include theme.media(">iphone-6-7-8-plus") {
+        padding: 2rem;
+    }
 }
 
 .container {

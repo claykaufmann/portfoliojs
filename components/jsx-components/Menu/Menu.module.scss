@@ -22,6 +22,7 @@
 
     @include theme.media("<=phone") {
         width: 83vw;
+        padding-bottom: 0;
     }
 }
 
@@ -32,7 +33,17 @@
 
 .openMenu {
     @include baseMenuStyle;
-    transform: translateX(0)
+    transform: translateX(0);
+
+    // to fix the slight missing part of the menu on the bottom when it opens
+    @include theme.media("<=iphone-6-7-8-plus") {
+        padding-bottom: 0.6rem;
+    }
+
+    @include theme.media("<=phone") {
+        width: 83vw;
+        padding-bottom: 0;
+    }
 }
 
 .menuLinkText {

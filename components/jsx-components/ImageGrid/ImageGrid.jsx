@@ -5,11 +5,7 @@ const ImageGrid = ({ images }) => {
     return (
         <div>
             {images.map(image => (
-                <Image
-                    imgSrc={image.photo.thumbsrc}
-                    imgCaption={image.photo.title}
-                    key={image.title}
-                />
+                <Image img={image} />
             ))}
         </div>
     );
