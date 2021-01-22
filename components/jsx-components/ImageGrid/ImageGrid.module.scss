@@ -1,3 +1,7 @@
 @import '../../../styles/theme/theme';
 
-
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
