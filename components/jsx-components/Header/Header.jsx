@@ -15,7 +15,7 @@ const Header = () => {
     return (
         <header className={styles.main}>
             {/* THIS SHOULD BE A PHOTO AT SOME POINT */}
-            <div ref={node}>
+            <div ref={node} className={styles.burgerDiv}>
                 <Burger open={open} setOpen={setOpen} />
                 <Menu open={open} setOpen={setOpen} />
             </div>

@@ -12,6 +12,7 @@
     top: 0;
     left: 0;
     transition: transform 0.3s ease-in-out;
+    z-index: 1;
 
     // make the menu take up the entire screen on phones portrait view
     @include theme.media("<=iphone-6-7-8-plus") {
@@ -48,5 +49,10 @@
 
     &:hover {
         color: theme.$on-secondary-light;
+    }
+
+    // align text to the left on computers/tablets
+    @include theme.media(">iphone-6-7-8-plus") {
+        text-align: left;
     }
 }
