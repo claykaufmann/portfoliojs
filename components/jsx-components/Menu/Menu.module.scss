@@ -6,19 +6,27 @@
     flex-direction: column;
     justify-content: center;
     background: theme.$secondary;
-    height: 100vh;
-    text-align: left;
+    height: 100%;
     padding: 2rem;
     position: absolute;
     top: 0;
     left: 0;
     transition: transform 0.3s ease-in-out;
+
+    // make the menu take up the entire screen on phones portrait view
+    @include theme.media("<=iphone-6-7-8-plus") {
+        width: 85vw;
+        height: 100vh;
+    }
+
+    @include theme.media("<=phone") {
+        width: 83vw;
+        height: 100vh;
+    }
 }
 
 .closedMenu {
-    position: absolute;
-    top: 0;
-    left: 0;
+    @include baseMenuStyle;
     transform: translateX(-100%);
 }
 
@@ -37,11 +45,6 @@
     text-decoration: none;
     transition: color 0.3s linear;
     text-align: center;
-
-    @include theme.media(">phone") {
-        text-align: left;
-        letter-spacing: 0.5rem;
-    }
 
     &:hover {
         color: theme.$on-secondary-light;

@@ -3,10 +3,10 @@
 // mixin to get rid of duplicate styling for opened and closed burger
 //  takes in a color which is used as the hover color
 @mixin baseBurgerStyle($color) {
-    position: absolute;
-    top: 5%;
-    left: 1.2rem;
-    display: flex;
+    position: sticky;
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    display: inline-flex;
     flex-direction: column;
     justify-content: space-around;
     width: 2rem;
@@ -26,12 +26,8 @@
             background: $color;
         }
     }
+
     
-    // will need to re go over this media query
-    @include theme.media(">phone") {
-        left: 2.5rem;
-        top: 5%;
-    }
 }
 
 /* One bar of the burger */

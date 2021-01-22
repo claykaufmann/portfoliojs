@@ -5,11 +5,21 @@
     font-family: theme.$header-font;
     color: theme.$on-primary;
     font-size: 2rem;
-    text-align: center;
     padding-top: 0.5rem;
     &:hover {
         cursor: pointer;
         color: theme.$on-primary-light;
     }
     transition: 0.3s;
+    display: inline-block; 
+
+    @include theme.media("<=iphone-6-7-8-plus") {
+        max-width: 18.3rem;
+    }
+}
+
+.main {
+    display: flex;
+    flex-wrap: nowrap;
+
 }
