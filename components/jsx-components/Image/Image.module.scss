@@ -15,8 +15,8 @@
         }
         // different sizing for larger screens
         @include theme.media(">=tablet") {
-            max-width: 100%;
-            height: 80vh;
+            height: fit-content;
+
         }
     }
 

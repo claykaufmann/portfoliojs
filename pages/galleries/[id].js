@@ -1,5 +1,6 @@
 import BaseLayout from '../../components/layouts/BaseLayout/BaseLayout';
 import ImageGrid from '../../components/jsx-components/ImageGrid/ImageGrid';
+import ImageCarousel from '../../components/jsx-components/ImageCarousel/ImageCarousel';
 import { getGalleryPaths, getImageData } from '../../lib/galleries';
 
 export async function getStaticPaths() {
@@ -25,7 +26,8 @@ const Gallery = ({ id, photoData }) => {
     return (
         <BaseLayout pageTitle={id}>
             <h2>{id}</h2>
-            <ImageGrid images={photoData.imagesData} />
+            {/*<ImageGrid images={photoData.imagesData} />*/}
+            <ImageCarousel images={photoData.imagesData} />
         </BaseLayout>
     );
 };

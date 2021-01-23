@@ -13,6 +13,7 @@
     "next": "10.0.4",
     "postcss-preset-env": "^6.7.0",
     "react": "17.0.1",
+    "react-alice-carousel": "^2.2.2",
     "react-dom": "17.0.1",
     "sass": "^1.32.4",
     "styled-jsx": "^3.3.2"
