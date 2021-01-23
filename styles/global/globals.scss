@@ -4,6 +4,10 @@
 // import css reset
 @use '../resets/reset';
 
+html, body {
+    height: 100%;
+}
+
 // set background color
 body {
     background-color: theme.$primary;

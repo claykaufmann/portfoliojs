@@ -1,7 +1,23 @@
-@import '../../../styles/theme/theme';
+@use '../../../styles/theme/theme';
 
 .images {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    // have images on one row on larger screens
+    @include theme.media(">=tablet") {
+        display: inline-block;
+        overflow: auto;
+        white-space: nowrap;
+
+        // hide horizontal scrollbars
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        height: 100vh;
+    }
 }
