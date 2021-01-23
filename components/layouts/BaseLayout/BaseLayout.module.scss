@@ -1,8 +1,12 @@
 @use '../../../styles/theme/theme';
 
 .pageContent {
-    padding-top: 2rem;
+    padding: 2rem;
     flex: 1 0 auto;
+
+    @include theme.media(">=tablet") {
+        padding: 2rem 0 0 0;
+    }
 }
 
 .container {
